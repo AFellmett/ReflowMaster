@@ -246,30 +246,35 @@ void LoadPaste()
         Profile graph Y values - temperature
         Length of the graph  ( int, how long if the graph array )
   */
-  float baseGraphX[7] = { 1, 90, 180, 210, 240, 270, 300 }; // time
-  float baseGraphY[7] = { 27, 90, 130, 138, 165, 138, 27 }; // value
+  float baseGraphX[7] = { 1, 30, 120, 150, 210, 240, 300 }; // time
+  float baseGraphY[7] = { 25, 100, 150, 183, 235, 183, 25 }; // value
 
-  solderPaste[0] = ReflowGraph( "CHIPQUIK", "No-Clean Sn42/Bi57.6/Ag0.4", 138, baseGraphX, baseGraphY, ELEMENTS(baseGraphX) );
+  solderPaste[0] = ReflowGraph( "CHIPQUIK", "No-Clean Sn63/Pb37", 183, baseGraphX, baseGraphY, ELEMENTS(baseGraphX) );
 
-  float baseGraphX1[7] = { 1, 90, 180, 225, 240, 270, 300 }; // time
-  float baseGraphY1[7] = { 25, 150, 175, 190, 210, 125, 50 }; // value
+  float baseGraphX1[7] = { 1, 90, 180, 210, 240, 270, 300 }; // time
+  float baseGraphY1[7] = { 27, 90, 130, 138, 165, 138, 27 }; // value
 
-  solderPaste[1] = ReflowGraph( "CHEMTOOLS L", "No Clean 63CR218 Sn63/Pb37", 183, baseGraphX1, baseGraphY1, ELEMENTS(baseGraphX1) );
+  solderPaste[1] = ReflowGraph( "CHIPQUIK", "No-Clean Sn42/Bi57.6/Ag0.4", 138, baseGraphX1, baseGraphY1, ELEMENTS(baseGraphX) );
 
-  float baseGraphX2[6] = { 1, 75, 130, 180, 210, 250 }; // time
-  float baseGraphY2[6] = { 25, 150, 175, 210, 150, 50 }; // value
+  float baseGraphX2[7] = { 1, 90, 180, 225, 240, 270, 300 }; // time
+  float baseGraphY2[7] = { 25, 150, 175, 190, 210, 125, 50 }; // value
 
-  solderPaste[2] = ReflowGraph( "CHEMTOOLS S", "No Clean 63CR218 Sn63/Pb37", 183, baseGraphX2, baseGraphY2, ELEMENTS(baseGraphX2) );
+  solderPaste[2] = ReflowGraph( "CHEMTOOLS L", "No Clean 63CR218 Sn63/Pb37", 183, baseGraphX2, baseGraphY2, ELEMENTS(baseGraphX1) );
 
-  float baseGraphX3[7] = { 1, 60, 120, 160, 210, 260, 310 }; // time
-  float baseGraphY3[7] = { 25, 105, 150, 150, 220, 150, 20 }; // value
+  float baseGraphX3[6] = { 1, 75, 130, 180, 210, 250 }; // time
+  float baseGraphY3[6] = { 25, 150, 175, 210, 150, 50 }; // value
 
-  solderPaste[3] = ReflowGraph( "DOC SOLDER", "No Clean Sn63/Pb36/Ag2", 187, baseGraphX3, baseGraphY3, ELEMENTS(baseGraphX3) );
+  solderPaste[3] = ReflowGraph( "CHEMTOOLS S", "No Clean 63CR218 Sn63/Pb37", 183, baseGraphX3, baseGraphY3, ELEMENTS(baseGraphX2) );
 
-  float baseGraphX4[6] = { 1, 90, 165, 225, 330, 360 }; // time
-  float baseGraphY4[6] = { 25, 150, 175, 235, 100, 25 }; // value
+  float baseGraphX4[7] = { 1, 60, 120, 160, 210, 260, 310 }; // time
+  float baseGraphY4[7] = { 25, 105, 150, 150, 220, 150, 20 }; // value
 
-  solderPaste[4] = ReflowGraph( "CHEMTOOLS SAC305 HD", "Sn96.5/Ag3.0/Cu0.5", 225, baseGraphX4, baseGraphY4, ELEMENTS(baseGraphX4) );
+  solderPaste[4] = ReflowGraph( "DOC SOLDER", "No Clean Sn63/Pb36/Ag2", 187, baseGraphX4, baseGraphY4, ELEMENTS(baseGraphX3) );
+
+  float baseGraphX5[6] = { 1, 90, 165, 225, 330, 360 }; // time
+  float baseGraphY5[6] = { 25, 150, 175, 235, 100, 25 }; // value
+
+  solderPaste[5] = ReflowGraph( "CHEMTOOLS SAC305 HD", "Sn96.5/Ag3.0/Cu0.5", 225, baseGraphX5, baseGraphY5, ELEMENTS(baseGraphX4) );
 
   //TODO: Think of a better way to initalise these baseGraph arrays to not need unique array creation
 }
