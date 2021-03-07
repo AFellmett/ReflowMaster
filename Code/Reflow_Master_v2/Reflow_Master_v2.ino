@@ -168,9 +168,9 @@ float maxBakeTemp = 100; // 100 Degrees C
 // Current index in the settings screen
 byte settings_pointer = 0;
 
-// Initialise an array to hold 5 profiles
+// Initialise an array to hold 6 profiles
 // Increase this array if you plan to add more
-ReflowGraph solderPaste[5];
+ReflowGraph solderPaste[6];
 // Index into the current profile
 int currentGraphIndex = 0;
 
